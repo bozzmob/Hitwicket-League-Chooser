@@ -27,6 +27,15 @@ function myFunction(arr) {
     // }
     document.getElementById("id01").innerHTML = arr;
 }
+//---
 
+getDataFromHitwicket("http://hitwicket.com/league/show/vi-9");
+
+function getDataFromHitwicket (leagueurl) {
+  window.location.href = leagueurl;
+  setTimeout( function () { var x = document.querySelectorAll(".bot_team_name");
+console.log(x.length); alert(x.length); });
+
+}
 //var numItems = $('.bot_team_name').length;
 //numItems;
